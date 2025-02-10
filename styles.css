@@ -1,0 +1,42 @@
+ /* Fullscreen body and no margin/padding */
+ body,
+ html {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     overflow: hidden;
+ }
+
+ /* Ensure iframe takes full width and height */
+ #chatbot-container {
+     width: 100%;
+     height: 100vh;
+     /* Viewport height for full screen */
+ }
+
+ iframe {
+     width: 100%;
+     height: 100%;
+     border: none;
+ }
+
+ footer {
+     position: fixed;
+     bottom: 10px;
+     left: 50%;
+     transform: translateX(-50%);
+     color: #fff;
+ }
+
+ /* Mobile and small screen adjustments */
+ @media (max-width: 768px) {
+     iframe {
+         height: 90vh;
+         /* Adjust height for smaller screens to leave space for the keyboard */
+     }
+
+     footer {
+         bottom: 20px;
+         font-size: 12px;
+     }
+ }
