@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkGPT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <div id="chatbot-container">
+            <iframe
+                src="https://cdn.botpress.cloud/webchat/v2.3/shareable.html?configUrl=https://files.bpcontent.cloud/2025/02/01/17/20250201171331-KUUZTA72.json"
+                width="100%" height="100%" frameborder="0">
+            </iframe>
+        </div>
+    </main>
+
+    <script>
+
+        document.addEventListener('contextmenu', function (event) {
+            event.preventDefault(); // Disables right-click context menu
+        });
+
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'F12' || (event.ctrlKey && event.shiftKey && event.key === 'I')) {
+                event.preventDefault(); // Block F12 or DevTools opening
+            }
+        });
+    </script>
+</body>
+
+</html>
